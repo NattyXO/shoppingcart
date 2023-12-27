@@ -2,13 +2,26 @@
 
 This code represents a simple shopping cart system using PHP and MySQL. It allows users to add products to their cart, adjust quantities, remove products, and proceed to place orders. Below are the key functionalities and explanations for each part of the code:
 
-## Features
+## Features:
 
-- **Adding Products to Cart:** Users can add products to their cart from the product page by specifying the quantity.
-- **View Cart:** The system displays the added products in the cart with details like product name, price, quantity, and total price.
-- **Update Cart:** Users can update the quantities of products in the cart and see the updated subtotal.
-- **Place Order:** The option to place an order is available when there are products in the cart.
+1. **Adding Products to Cart:**
+   - On the product page, users can add items to their cart by selecting the quantity and clicking an "Add to Cart" button.
+   - The system verifies the product ID and quantity before adding them to the cart.
 
+2. **Cart Management:**
+   - Users can view their cart on the "Cart" page.
+   - Products in the cart are displayed with their details, including images, names, prices, quantities, and total prices.
+   - Users can update quantities or remove products from the cart.
+   - The subtotal of all items in the cart is calculated and displayed.
+
+3. **Updating Cart:**
+   - Users can update the quantities of items in the cart by changing the quantity values and clicking an "Update" button.
+   - Quantity changes are validated to ensure they are numeric and within certain limits (minimum: 1, maximum: available quantity for that product).
+
+4. **Placing Orders:**
+   - Users can proceed to place an order by clicking a "Place Order" button, provided the cart is not empty.
+   - Clicking "Place Order" redirects the user to the "Place Order" page.
+  
 ## Setup Instructions
 
 1. **Database Setup:** Create a MySQL database named `shoppingcart`. Import the provided SQL schema to set up the necessary tables.
