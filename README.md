@@ -1,6 +1,6 @@
 # Shopping Cart System
 
-This PHP-based Shopping Cart System is a simple web application that allows users to add products to their cart, view them, update quantities, and place orders.
+This code represents a simple shopping cart system using PHP and MySQL. It allows users to add products to their cart, adjust quantities, remove products, and proceed to place orders. Below are the key functionalities and explanations for each part of the code:
 
 ## Features
 
